@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="مشروع GEO217 بجامعة العلمين الدولية: العلاقة بين التعليم الجيد والمساواة بين الجنسين (أهداف التنمية المستدامة 4 و5 و10) ونتائج استبيان ميداني.">
+<meta property="og:title" content="التعليم الجيد والمساواة بين الجنسين | GEO217 – AIU">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#1a1f3a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%8E%93%3C/text%3E%3C/svg%3E">
+<title>التعليم الجيد والمساواة بين الجنسين | GEO217 – AIU</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1f3a;--paper:#f6f7fb;--card:#fff;--muted:#565d78;--line:#dfe2ec;--g4:#c5192d;--g5:#ff3a21;--g10:#dd1367;--head:'Readex Pro','Segoe UI',Tahoma,sans-serif;--body:'IBM Plex Sans Arabic','Segoe UI',Tahoma,sans-serif;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eceefa;--paper:#12141f;--card:#1b1e2e;--muted:#a3a9c4;--line:#2c3045;color-scheme:dark}}
+:root[data-theme="dark"]{--ink:#eceefa;--paper:#12141f;--card:#1b1e2e;--muted:#a3a9c4;--line:#2c3045;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.9;font-size:17px}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--paper);z-index:10}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--g10);outline-offset:3px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:11;background:var(--paper);border-bottom:1px solid var(--line)}
+nav{max-width:1080px;margin:auto;padding:12px 20px;display:flex;gap:22px;align-items:center;overflow-x:auto;white-space:nowrap;font-size:15px}
+nav b{font-family:var(--head);margin-inline-end:auto;font-weight:700}
+nav a{text-decoration:none;color:var(--muted)}nav a:hover{color:var(--ink)}
+section,.hero{max-width:1080px;margin:auto;padding:72px 20px}
+h1,h2,h3{font-family:var(--head);line-height:1.4;margin:0 0 .5em}
+h1{font-size:clamp(34px,6vw,60px);font-weight:700;max-width:16em}
+h2{font-size:clamp(26px,4vw,36px);font-weight:700}
+h3{font-size:19px;font-weight:600}
+p{margin:0 0 1em;max-width:42em}
+.muted{color:var(--muted)}
+.hero{padding-top:56px}
+.hero p{font-size:19px;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);margin:40px 0 28px;border-radius:14px;overflow:hidden}
+.tile{color:#fff;padding:22px 20px;min-height:170px;display:flex;flex-direction:column;justify-content:space-between}
+.tile b{font-family:var(--head);font-size:clamp(48px,9vw,92px);line-height:1}
+.tile span{font-size:15px;font-weight:500}
+.t4{background:var(--g4)}.t5{background:var(--g5)}.t10{background:var(--g10)}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;background:var(--ink);color:var(--paper);text-decoration:none;font-weight:600;font-size:16px}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-block:2px solid var(--ink);margin-top:36px}
+.stat{padding:22px 16px;border-inline-start:1px solid var(--line)}
+.stat:first-child{border-inline-start:0}
+.stat b{display:block;font-family:var(--head);font-size:38px;line-height:1.2}
+.stat span{font-size:15px;color:var(--muted);line-height:1.6;display:block}
+details{background:var(--card);border:1px solid var(--line);border-radius:10px;margin-bottom:10px}
+summary{cursor:pointer;padding:16px 20px;font-family:var(--head);font-weight:600;font-size:18px;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-size:24px;line-height:1;color:var(--g10)}
+details[open] summary::after{content:"–"}
+details[open]{border-color:var(--g10)}
+details div{padding:0 20px 8px;color:var(--muted)}
+.topics{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.topics li{background:var(--card);border:1px solid var(--line);border-inline-start:5px solid var(--g5);border-radius:8px;padding:12px 16px}
+.topics li:nth-child(3n+1){border-inline-start-color:var(--g4)}
+.topics li:nth-child(3n){border-inline-start-color:var(--g10)}
+.out{background:var(--ink);color:var(--paper);border-radius:14px;padding:28px;margin-top:32px}
+.out h3{margin-bottom:.4em}.out p{margin:0 0 .8em;max-width:none}
+.out ul{margin:0;padding-inline-start:20px}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+.mem{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px}
+.mem b{display:block;font-family:var(--head);font-size:17px;line-height:1.5}
+.mem small{display:block;color:var(--muted);font-size:14px}
+.mem em{font-style:normal;display:inline-block;margin-top:10px;padding:2px 12px;border-radius:999px;background:var(--g10);color:#fff;font-size:14px;direction:ltr}
+.refs{padding:0;margin:0;list-style:none;display:grid;gap:12px;counter-reset:r}
+.refs li{counter-increment:r;padding-inline-start:36px;position:relative;font-size:15px;line-height:1.7;color:var(--muted);overflow-wrap:anywhere}
+.refs li::before{content:counter(r);position:absolute;inset-inline-start:0;top:0;font-family:var(--head);font-weight:600;color:var(--ink)}
+.refs [dir=ltr]{text-align:left}
+.tags{display:flex;gap:10px;flex-wrap:wrap;direction:ltr;justify-content:flex-end;margin-top:20px}
+.tags span{border:1px solid var(--line);border-radius:999px;padding:2px 14px;font-size:14px;color:var(--muted)}
+.res{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.q{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.q.wide{grid-column:1/-1}
+.q h3{font-size:17px;margin-bottom:14px}
+.q small{display:block;color:var(--muted);font-size:14px;margin-top:6px}
+.row{display:grid;grid-template-columns:1fr auto;gap:2px 12px;margin-bottom:10px;font-size:15px;line-height:1.7}
+.row b{font-family:var(--head);font-weight:600;direction:ltr}
+.bar{grid-column:1/-1;height:10px;background:var(--line);border-radius:5px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--c,var(--g4));border-radius:5px}
+.find{margin:24px 0 0;padding:0;list-style:none;display:grid;gap:10px}
+.find li{border-inline-start:5px solid var(--g5);padding:2px 16px;max-width:46em}
+.find li:nth-child(odd){border-inline-start-color:var(--g10)}
+@media (max-width:760px){.res{grid-template-columns:1fr}}
+footer{border-top:1px solid var(--line);padding:32px 20px;text-align:center;color:var(--muted);font-size:15px}
+@media (max-width:760px){.two{grid-template-columns:1fr;gap:8px}.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-inline-start:0}.stat:nth-child(n+3){border-top:1px solid var(--line)}section,.hero{padding:52px 20px}.tile{min-height:120px;padding:16px 12px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><nav>
+<b>مجموعة 290</b>
+<a href="#problem">المشكلة</a><a href="#research">الأبحاث</a><a href="#solution">الحل</a><a href="#results">النتائج</a><a href="#team">الفريق</a><a href="#refs">المراجع</a>
+</nav></header>
+
+<main>
+<div class="hero">
+<p>مشروع الاستدامة والتنمية المستدامة · مقرر GEO217 · جامعة العلمين الدولية</p>
+<h1>التعليم الجيد لا يكتمل بدون مساواة بين الجنسين</h1>
+<p>زيادة عدد الفتيات في المدارس والجامعات خطوة مهمة، لكنها لا تضمن فرصًا متساوية في التعلم والعمل والقيادة. يربط مشروعنا بين ثلاثة أهداف من أهداف التنمية المستدامة، ويقيس الواقع داخل الجامعة باستبيان ميداني.</p>
+<div class="tiles">
+<div class="tile t4"><b>4</b><span>التعليم الجيد</span></div>
+<div class="tile t5"><b>5</b><span>المساواة بين الجنسين</span></div>
+<div class="tile t10"><b>10</b><span>الحد من أوجه عدم المساواة</span></div>
+</div>
+<div class="btns"><a class="btn" href="#solution">شاركنا في الاستبيان</a><a class="btn alt" href="#research">اقرأ ملخص الأبحاث</a></div>
+</div>
+
+<section id="problem">
+<div class="two">
+<div><h2>المشكلة المرصودة</h2></div>
+<div>
+<p>ما زالت الفتيات يواجهن فرصًا غير متكافئة في الحصول على تعليم جيد والاستمرار فيه، رغم الجهود المبذولة لتحقيق الهدف الرابع.</p>
+<p>من أسباب ذلك الزواج المبكر والفقر والصور النمطية. وحتى عند زيادة أعداد الملتحقات، لا تتساوى دائمًا فرصهن في التعلم والعمل والقيادة، وهذا ما يربط الهدف الرابع بالهدف الخامس.</p>
+</div>
+</div>
+<div class="stats">
+<div class="stat"><b>56.9%</b><span>من التباين في الاستدامة يفسره الهدفان 4 و5 معًا (عينة من 301 طالب سعودي)</span></div>
+<div class="stat"><b>25%</b><span>مشاركة النساء في القوى العاملة بجنوب آسيا رغم ارتفاع الالتحاق بالتعليم</span></div>
+<div class="stat"><b>10–20%</b><span>زيادة دخل الفتاة مع كل سنة إضافية من التعليم الثانوي</span></div>
+<div class="stat"><b>131 دولة</b><span>راجعت اليونسكو التزاماتها في قمة تحويل التعليم</span></div>
+</div>
+</section>
+
+<section id="research">
+<h2>ملخص الأبحاث</h2>
+<p class="muted">مراجعة لدراسات منشورة بين 2018 و2026 عن العلاقة بين الهدفين والتحديات والحلول. اضغط على أي محور لقراءته.</p>
+<details open><summary>العلاقة بين التعليم الجيد والمساواة والاستدامة</summary><div><p>أظهرت دراسة مالك وزملائه (2025) أن الهدفين الرابع والخامس يفسران معًا 56.9% من التباين في الاستدامة. واستخدم الطريف وزملاؤه (2025) نماذج تنبؤية لتقدير التقدم في الهدف الخامس حتى 2030، وتوقعوا وصول مصر إلى ما بين 60 و70%. تعتمد النتيجة على السياسات والموارد وتطوير المؤسسات التعليمية.</p></div></details>
+<details><summary>جودة التعليم تتجاوز مجرد الالتحاق</summary><div><p>وجدت دراسة أسد الله وزملائه (2024) في جنوب آسيا فجوة بين تعليم المرأة وفرصها في سوق العمل، إذ بقيت مشاركتها عند 25%. ورصدت الدراسة أيضًا تمثيلًا محدودًا للشخصيات النسائية في الكتب المدرسية، أي تحيزًا جندريًا داخل البيئة التعليمية.</p></div></details>
+<details><summary>العوائق التي تحد من فرص التعليم</summary><div><p>تشمل العوائق الزواج المبكر والحمل المبكر والفقر والنزاعات ونقص المرافق الصحية والمعلمات والتمييز ضد ذوات الإعاقة (كومار وباندي). وأضافت دراسة زيكافوس وزملائه (2024) عن أفريقيا جنوب الصحراء نقص التمويل وضعف البنية التعليمية وعدم كفاية إعداد المعلمين.</p></div></details>
+<details><summary>دور السياسات والمساعدات الحكومية والدولية</summary><div><p>في دراسة ليخاك (2023) على 50 دولة نامية بين 2002 و2020، حسّنت المساعدات التعليمية الالتحاق وإتمام المرحلة الابتدائية، لكن استفادة الذكور كانت أكبر. وأظهرت مراجعة اليونسكو لالتزامات 131 دولة اهتمامًا بالمساواة في السياسات المعلنة مع نقص في تمويل البرامج المراعية للنوع الاجتماعي.</p></div></details>
+<details><summary>دور المؤسسات التعليمية والتكنولوجيا</summary><div><p>رفع نشاط تعليمي عن عالمات بارزات، استخدمه بيريز دي فيلاريال وسكوتون (2024)، وعي الطلاب بالفجوة بين الجنسين في العلوم. ويمكن للذكاء الاصطناعي دعم التعلم التكيفي ومساعدة الطلاب ذوي الإعاقة (أباتا وزملاؤه 2025)، بشرط معالجة التحديات الأخلاقية والتقنية.</p></div></details>
+<details><summary>أهمية الحكومات المحلية</summary><div><p>تقع المسؤولية أيضًا على الحكومات المحلية لأنها الأقرب إلى احتياجات المجتمع. يعرض أوسبورن أمثلة مثل برامج القيادة النسائية والتثقيف الصحي للمراهقات ومبادرات مدن التعلم.</p></div></details>
+<p style="margin-top:24px"><b>الخلاصة:</b> الهدفان متكاملان. لا تكفي زيادة الالتحاق، بل يجب ضمان جودة المناهج وتكافؤ الفرص والتمويل والتدريب ومواجهة الصور النمطية.</p>
+</section>
+
+<section id="solution">
+<div class="two">
+<div>
+<h2>الحل المنفَّذ: استبيان ميداني</h2>
+<p>أعددنا استبيانًا إلكترونيًا عبر Microsoft Forms ووزعناه على طلاب وطالبات الجامعة لمعرفة أبرز التحديات أمام التعليم الجيد والمساواة. حلّلنا الإجابات بالنسب المئوية، وتجدون النتائج في القسم التالي.</p>
+<div class="btns"><a class="btn" href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=lCWgN_ciHEGasVu16Kaq7RoOmdij_lhJjtNKfnn8y49UMVJTOVdYRlJRMVc0RldBVVE4RjlKSEpWUC4u" target="_blank" rel="noopener">املأ الاستبيان</a></div>
+</div>
+<div>
+<h3>ماذا يسأل الاستبيان؟</h3>
+<ul class="topics">
+<li>الإمكانيات التعليمية والتكنولوجية</li>
+<li>استخدام هيئة التدريس للتكنولوجيا</li>
+<li>النماذج النسائية الناجحة</li>
+<li>التوجيه حول الذكاء الاصطناعي والنزاهة الأكاديمية</li>
+<li>الأمان من التحرش والتمييز</li>
+<li>تكافؤ فرص التعليم والاستعداد للأزمات</li>
+</ul>
+</div>
+</div>
+<div class="out">
+<h3>المخرج العملي</h3>
+<p>تقرير بنتائج الاستبيان مدعوم بالرسوم البيانية، يحدد أهم المشكلات ويقدم توصيات عملية:</p>
+<ul>
+<li>تحسين الإمكانيات التعليمية والرقمية</li>
+<li>تطوير تدريب المعلمين</li>
+<li>توفير فرص تعليمية وتدريبية متساوية</li>
+<li>نشر الوعي بالمساواة بين الجنسين</li>
+</ul>
+</div>
+</section>
+
+<section id="results">
+<h2>نتائج الاستبيان</h2>
+<p class="muted">شارك 49 طالبًا وطالبة من جامعات مختلفة. النسب محسوبة من عدد المشاركين، وفي سؤالي الاختيار المتعدد من إجمالي الاختيارات (كما في Microsoft Forms). «أخرى» تعني إجابة مكتوبة بصيغة حرة. العينة صغيرة، فالنتائج مؤشر على الاتجاهات وليست تعميمًا.</p>
+<ul class="find">
+<li>73% (36 من 49) يتلقون توجيهًا كافيًا حول استخدام الذكاء الاصطناعي وتجنب الانتحال.</li>
+<li>51% (25 من 49) يرون أن الجامعة تحمي من التحرش والتمييز بدرجة أقل من «كبيرة».</li>
+<li>29% (14 من 49) لاحظوا بوضوح تخصصات يُشجَّع فيها جنس معين أكثر من الآخر، و16% لاحظوا ذلك إلى حد ما.</li>
+<li>الأكثر اختيارًا للمساواة: المنح الدراسية وفرص التدريب المتساوية (25 اختيارًا، 39% من الاختيارات).</li>
+</ul>
+<div class="res" id="res"></div>
+</section>
+
+<section id="team">
+<h2>فريق العمل</h2>
+<p class="muted">المجموعة 290 · كلية طب الأسنان</p>
+<div class="team">
+<div class="mem"><b>عمر علي عبد المعطي</b><small>Omar Ali Abdelmoaty</small><em>Research and Analysis</em></div>
+<div class="mem"><b>نور عمرو عبد الرازق</b><small>Nour Amr Abdelrazik</small><em>Content Development</em></div>
+<div class="mem"><b>ريم ياسر محمد</b><small>Reem Yasser Mohamed</small><em>Deploying AI tools</em></div>
+<div class="mem"><b>نوران طارق إبراهيم</b><small>Nouran Tarek Ibrahim</small><em>Digital publishing</em></div>
+<div class="mem"><b>منة وليد محمد</b><small>Menna Waleed Mohamed</small><em>Final output</em></div>
+</div>
+</section>
+
+<section id="refs">
+<h2>المراجع (APA)</h2>
+<ol class="refs">
+<li>Khaleefah, S. K., &amp; Hussein, T. A. (2026). التعليم الجيد والتنمية المستدامة: التحديات الحالية والآفاق المستقبلية. <i>Journal of Madenat Alelem, 18</i>(3).</li>
+<li>عبد المنعم عبد الفتاح، &amp; أميرة. (2025). تصورات الأكاديميين حول الذكاء الاصطناعي في التعليم الإعلامي: دراسة كيفية حول تعزيز الهدف الرابع من أهداف التنمية المستدامة وحماية النزاهة الأكاديمية في مصر. <i>المجلة العربية لبحوث الإعلام والاتصال, 2025</i>(51), 227.</li>
+<li dir="ltr">Malik, A., Abrar, D., Khan, N. A., &amp; Alhussami, A. M. (2025). Sustainable development goals: students’ perception on quality education, gender equality, and sustainability. <i>Discover Sustainability, 6</i>(1), 410.</li>
+<li dir="ltr">Zickafoose, A., Ilesanmi, O., Diaz-Manrique, M., Adeyemi, A. E., Walumbe, B., Strong, R., … &amp; Dooley, K. (2024). Barriers and challenges affecting quality education (Sustainable Development Goal #4) in sub-Saharan Africa by 2030. <i>Sustainability, 16</i>(7), 2657.</li>
+<li dir="ltr">Asadullah, M. N., Webb, A., &amp; Islam, K. M. M. (2024). SDG 4 mid-point challenge: Fixing the broken interlinkages between education and gender equality. <i>International Journal of Educational Development, 106</i>, 103015.</li>
+<li dir="ltr">Kumar, C., &amp; Pandey, V. (2021). Access to education and gender equality. In <i>Gender equality</i> (pp. 1–10). Springer International Publishing.</li>
+<li dir="ltr">Alturif, G., El-Bary, A. A., &amp; Osman, R. A. (2025). A deep learning approach to gender equality: Forecasting educational indicators with 1D-CNN aligned with SDG 5. <i>PLoS ONE, 20</i>(9), e0332273.</li>
+<li dir="ltr">Apata, O. E., Ajose, S. T., Apata, B. O., Olaitan, G. I., Oyewole, P. O., Ogunwale, O. M., … &amp; Feyijimi, T. (2025). Artificial intelligence in higher education: A systematic review of contributions to SDG 4 (quality education) and SDG 10 (reduced inequality). <i>International Journal of Educational Management</i>, 1–18.</li>
+<li dir="ltr">Lekhak, B. P. (2023). Evaluating the effectiveness of education aid in promoting inclusive and equitable quality education with a specific emphasis on the gender perspective. <i>Journal of Education and Learning, 12</i>(5), 127–149.</li>
+<li dir="ltr">Bordoloi, S. (2023). Leave no one behind: Gender equality in Transforming Education Summit national commitments.</li>
+<li dir="ltr">De Villarreal, M. P., &amp; Scotton, P. (2024). Yes we can: Promoting gender equality from university to primary education teaching through the design of knowledge models. <i>Interchange, 55</i>(3), 349–365.</li>
+<li dir="ltr">Osborne, M. (2024). On the role of local government in delivering Sustainable Development Goal 4 (Quality Education).</li>
+</ol>
+<div class="tags"><span>#AIU</span><span>#SDGs</span><span>#Climate_change_Sustainability</span><span>#GEO217</span><span>#Alamein_International_University</span></div>
+</section>
+</main>
+<footer>© 2026 مشروع مادة GEO217 · جامعة العلمين الدولية (AIU) · المجموعة 290</footer>
+<script>
+(function(){
+var A='أخرى (إجابة مكتوبة)';
+var D=[
+['هل الطلاب والطالبات يحصلون على فرص متساوية في المشاركة داخل المحاضرات والأنشطة؟',49,[['نعم، دائمًا',16],['غالبًا',11],['أحيانًا',6],['نادرًا',1],['لا',5],[A,10]]],
+['هل لاحظت تخصصات جامعية يُشجَّع فيها جنس معين أكثر من الآخر؟',49,[['نعم، بشكل واضح',14],['إلى حد ما',8],['لا',11],['لست متأكدًا',6],[A,10]]],
+['هل يستخدم أعضاء هيئة التدريس التكنولوجيا الحديثة بفعالية؟',49,[['دائمًا',19],['أحيانًا',23],['نادرًا',5],['أبدًا',2]]],
+['هل النماذج النسائية الناجحة تشجع الطالبات على تحقيق طموحاتهن؟',49,[['أوافق',35],['محايد',10],['لا أوافق',4]]],
+['هل توفر الجامعة الإمكانيات التعليمية والتكنولوجية اللازمة؟',49,[['نعم، بدرجة كبيرة',22],['نعم، إلى حد ما',24],['بدرجة قليلة',1],['لا',2]]],
+['هل تتلقى توجيهًا كافيًا حول الذكاء الاصطناعي والنزاهة الأكاديمية؟',49,[['نعم',36],['لا',13]]],
+['هل توفر الجامعة بيئة آمنة من التحرش والتمييز القائم على النوع؟',49,[['بدرجة كبيرة',24],['بدرجة متوسطة',13],['بدرجة قليلة',8],['لا تهتم بذلك',4]]],
+['هل توفر الجامعة فرصًا متساوية لتعليم جيد دون تمييز بسبب الظروف المادية؟',49,[['نعم، بشكل كامل',21],['إلى حد كبير',17],['إلى حد ما',7],['لا',4]]],
+['هل جامعتك مستعدة لاستمرار التعليم في الأزمات (مثل انقطاع الإنترنت)؟',49,[['نعم، بشكل كامل',18],['إلى حد كبير',18],['إلى حد ما',9],['لا',4]]],
+['ما الجانب الذي يحتاج أكبر قدر من التطوير لتحقيق التعليم الجيد؟ (اختيار متعدد)',110,[['تطوير المناهج وطرق التدريس',22],['تطوير الإدارة الجامعية والتخطيط',20],['تدريب أعضاء هيئة التدريس',17],['تحسين البنية التحتية والإمكانيات التكنولوجية',16],['تنظيم استخدام الذكاء الاصطناعي وحماية النزاهة الأكاديمية',14],['توفير مصادر المعرفة والمكتبات الإلكترونية',11],['ضمان تكافؤ فرص التعليم لجميع الطلاب',10]],1],
+['ما الإجراء الأكثر فاعلية لتحقيق التعليم الجيد والمساواة بين الجنسين؟ (اختيار متعدد)',65,[['توفير منح دراسية وفرص تدريب متساوية',25],['نشر الوعي بأهمية المساواة بين الجنسين',18],['توفير سياسات واضحة لمكافحة التمييز',12],['تطوير المناهج للتخلص من الصور النمطية',10]],1]
+];
+function pc(a,t){var r=a.map(function(x,i){var v=x[1]/t*100;return{i:i,f:Math.floor(v),r:v%1}});
+var s=100-r.reduce(function(m,x){return m+x.f},0);
+r.slice().sort(function(a,b){return b.r-a.r}).slice(0,s).forEach(function(x){x.f++});
+return r.map(function(x){return x.f})}
+var C=['var(--g4)','var(--g5)','var(--g10)'],h='';
+D.forEach(function(q,i){
+var p=pc(q[2],q[1]);
+h+='<div class="q'+(q[3]?' wide':'')+'"><h3>'+q[0]+'</h3>';
+q[2].forEach(function(a,j){
+h+='<div class="row"><span>'+a[0]+'</span><b>'+p[j]+'% ('+a[1]+')</b><div class="bar"><i style="width:'+p[j]+'%;--c:'+C[i%3]+'"></i></div></div>';});
+h+='<small>'+(q[3]?'إجمالي الاختيارات: ':'عدد المشاركين: ')+q[1]+'</small></div>';
+});
+document.getElementById('res').innerHTML=h;
+})();
+</script>
+</body>
+</html>
